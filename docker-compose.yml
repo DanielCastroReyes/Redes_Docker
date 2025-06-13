@@ -1,0 +1,65 @@
+version: '3'
+
+services:
+
+  alpine1:
+    image: alpine:3.22.0
+    container_name: alpine1
+    command: tail -f /dev/null
+    networks:
+      - caliente
+
+  alpine2:
+    image: alpine:3.22.0
+    container_name: alpine2
+    command: tail -f /dev/null
+    networks:
+      - caliente
+
+  alpine3:
+    image: alpine:3.22.0
+    container_name: alpine3
+    command: tail -f /dev/null
+    networks:
+      - caliente
+
+  alpine4:
+    image: alpine:3.22.0
+    container_name: alpine4
+    command: tail -f /dev/null
+    networks:
+      - caliente
+
+  alpinef1:
+    image: alpine:3.22.0
+    container_name: alpinef1
+    command: tail -f /dev/null
+    networks:
+      - fria
+
+  alpinef2:
+    image: alpine:3.22.0
+    container_name: alpinef2
+    command: tail -f /dev/null
+    networks:
+      - fria
+
+  alpinef3:
+    image: alpine:3.22.0
+    container_name: alpinef3
+    command: tail -f /dev/null
+    networks:
+      - fria
+
+  alpinef4:
+    image: alpine:3.22.0
+    container_name: alpinef4
+    command: tail -f /dev/null
+    networks:
+      - fria
+
+networks:
+  caliente:
+    driver: bridge
+  fria:
+    driver: bridge
