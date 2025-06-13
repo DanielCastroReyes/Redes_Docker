@@ -2,64 +2,64 @@ version: '3'
 
 services:
 
-  alpine1:
-    image: alpine:3.22.0
-    container_name: alpine1
+  cal1:
+    image: alpine
+    container_name: cal1
     command: tail -f /dev/null
     networks:
-      - caliente
+      - red-caliente
 
-  alpine2:
-    image: alpine:3.22.0
-    container_name: alpine2
+  cal2:
+    image: alpine
+    container_name: cal2
     command: tail -f /dev/null
     networks:
-      - caliente
+      - red-caliente
 
-  alpine3:
-    image: alpine:3.22.0
-    container_name: alpine3
+  cal3:
+    image: alpine
+    container_name: cal3
     command: tail -f /dev/null
     networks:
-      - caliente
+      - red-caliente
 
-  alpine4:
-    image: alpine:3.22.0
-    container_name: alpine4
+  cal4:
+    image: alpine
+    container_name: cal4
     command: tail -f /dev/null
     networks:
-      - caliente
+      - red-caliente
 
-  alpinef1:
-    image: alpine:3.22.0
-    container_name: alpinef1
+  frio1:
+    image: alpine
+    container_name: frio1
     command: tail -f /dev/null
     networks:
-      - fria
+      - red-frio
 
-  alpinef2:
-    image: alpine:3.22.0
-    container_name: alpinef2
+  frio2:
+    image: alpine
+    container_name: frio2
     command: tail -f /dev/null
     networks:
-      - fria
+      - red-frio
 
-  alpinef3:
-    image: alpine:3.22.0
-    container_name: alpinef3
+  frio3:
+    image: alpine
+    container_name: frio3
     command: tail -f /dev/null
     networks:
-      - fria
+      - red-frio
 
-  alpinef4:
-    image: alpine:3.22.0
-    container_name: alpinef4
+  frio4:
+    image: alpine
+    container_name: frio4
     command: tail -f /dev/null
     networks:
-      - fria
+      - red-frio
 
 networks:
-  caliente:
+  red-caliente:
     driver: bridge
-  fria:
+  red-frio:
     driver: bridge
